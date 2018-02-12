@@ -17,6 +17,7 @@
 		DB724AC5202D7A7100125C7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB724AC4202D7A7100125C7F /* GoogleService-Info.plist */; };
 		DB724ACB20324B7300125C7F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724ACA20324B7300125C7F /* MainTabBarController.swift */; };
 		DB724ACD20324C1D00125C7F /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724ACC20324C1D00125C7F /* UserProfileController.swift */; };
+		DB724AD0203253CC00125C7F /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724ACF203253CC00125C7F /* UserProfileHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DB724AC4202D7A7100125C7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB724ACA20324B7300125C7F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DB724ACC20324C1D00125C7F /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		DB724ACF203253CC00125C7F /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +79,10 @@
 		DB724AAE202D671F00125C7F /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				DB724ACE203253BB00125C7F /* UserProfile */,
 				DB724AC1202D744300125C7F /* Utils */,
 				DB724AAF202D671F00125C7F /* AppDelegate.swift */,
 				DB724ACA20324B7300125C7F /* MainTabBarController.swift */,
-				DB724ACC20324C1D00125C7F /* UserProfileController.swift */,
 				DB724AB1202D671F00125C7F /* ViewController.swift */,
 				DB724AB3202D671F00125C7F /* Main.storyboard */,
 				DB724AB6202D671F00125C7F /* Assets.xcassets */,
@@ -97,6 +99,15 @@
 				DB724AC2202D744F00125C7F /* Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DB724ACE203253BB00125C7F /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				DB724ACC20324C1D00125C7F /* UserProfileController.swift */,
+				DB724ACF203253CC00125C7F /* UserProfileHeader.swift */,
+			);
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		F830628F78A8A3390D32E3B1 /* Pods */ = {
@@ -247,6 +258,7 @@
 				DB724AB2202D671F00125C7F /* ViewController.swift in Sources */,
 				DB724AC3202D744F00125C7F /* Extensions.swift in Sources */,
 				DB724ACB20324B7300125C7F /* MainTabBarController.swift in Sources */,
+				DB724AD0203253CC00125C7F /* UserProfileHeader.swift in Sources */,
 				DB724ACD20324C1D00125C7F /* UserProfileController.swift in Sources */,
 				DB724AB0202D671F00125C7F /* AppDelegate.swift in Sources */,
 			);
