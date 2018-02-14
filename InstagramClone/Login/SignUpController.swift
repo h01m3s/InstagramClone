@@ -135,10 +135,16 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
                     
                     if let err = err {
                         print("Fail to save user info into database: ", err)
+                        return
                     }
                     
                     print("Successfully saved user info into database")
                     
+                    guard let mainTabBarController = UIApplication.shared.keyWindow?.rootViewController as? MainTabBarController else {
+                        return
+                    }
+                    mainTabBarController.setupViewControllers()
+                    self.dismiss(animated: true, completion: nil)
                 })
 
             })
