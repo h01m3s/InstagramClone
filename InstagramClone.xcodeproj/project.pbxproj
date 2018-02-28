@@ -19,6 +19,7 @@
 		DB724ACD20324C1D00125C7F /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724ACC20324C1D00125C7F /* UserProfileController.swift */; };
 		DB724AD0203253CC00125C7F /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724ACF203253CC00125C7F /* UserProfileHeader.swift */; };
 		DB724AD3203269BC00125C7F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724AD2203269BC00125C7F /* LoginController.swift */; };
+		DBFDA78320465D650058FCF5 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDA78220465D650058FCF5 /* PhotoSelectorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DB724ACC20324C1D00125C7F /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		DB724ACF203253CC00125C7F /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		DB724AD2203269BC00125C7F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		DBFDA78220465D650058FCF5 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		DB724AAE202D671F00125C7F /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				DBFDA78120465D520058FCF5 /* AddPhoto */,
 				DB724AD1203269AF00125C7F /* Login */,
 				DB724ACE203253BB00125C7F /* UserProfile */,
 				DB724AC1202D744300125C7F /* Utils */,
@@ -119,6 +122,14 @@
 				DB724AB1202D671F00125C7F /* SignUpController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		DBFDA78120465D520058FCF5 /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				DBFDA78220465D650058FCF5 /* PhotoSelectorController.swift */,
+			);
+			path = AddPhoto;
 			sourceTree = "<group>";
 		};
 		F830628F78A8A3390D32E3B1 /* Pods */ = {
@@ -273,6 +284,7 @@
 				DB724ACD20324C1D00125C7F /* UserProfileController.swift in Sources */,
 				DB724AB0202D671F00125C7F /* AppDelegate.swift in Sources */,
 				DB724AD3203269BC00125C7F /* LoginController.swift in Sources */,
+				DBFDA78320465D650058FCF5 /* PhotoSelectorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
