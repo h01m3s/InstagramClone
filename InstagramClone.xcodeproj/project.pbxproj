@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C2C7D437B32FDE20E701CB82 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F0CE3B1C3E5A74EE51F8BA /* Pods_InstagramClone.framework */; };
+		DB276332204F990400829E08 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB276331204F990400829E08 /* Post.swift */; };
+		DB276334204F9B1200829E08 /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB276333204F9B1200829E08 /* UserProfilePhotoCell.swift */; };
 		DB724AB0202D671F00125C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724AAF202D671F00125C7F /* AppDelegate.swift */; };
 		DB724AB2202D671F00125C7F /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724AB1202D671F00125C7F /* SignUpController.swift */; };
 		DB724AB5202D671F00125C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB724AB3202D671F00125C7F /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		1B7016AA1E984D77248C7E9B /* Pods-InstagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramClone/Pods-InstagramClone.debug.xcconfig"; sourceTree = "<group>"; };
 		64F0CE3B1C3E5A74EE51F8BA /* Pods_InstagramClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1CDC1B0894B75E37A1E666 /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramClone/Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
+		DB276331204F990400829E08 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DB276333204F9B1200829E08 /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
 		DB724AAC202D671F00125C7F /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB724AAF202D671F00125C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB724AB1202D671F00125C7F /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB276330204F98F800829E08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB276331204F990400829E08 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DB724AA3202D671F00125C7F = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +101,7 @@
 		DB724AAE202D671F00125C7F /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				DB276330204F98F800829E08 /* Models */,
 				DBFDA78120465D520058FCF5 /* AddPhoto */,
 				DB724AD1203269AF00125C7F /* Login */,
 				DB724ACE203253BB00125C7F /* UserProfile */,
@@ -116,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				DB724ACC20324C1D00125C7F /* UserProfileController.swift */,
+				DB276333204F9B1200829E08 /* UserProfilePhotoCell.swift */,
 				DB724ACF203253CC00125C7F /* UserProfileHeader.swift */,
 			);
 			path = UserProfile;
@@ -289,7 +303,9 @@
 				DBA47F6B204B883E0072A11C /* SharePhotoController.swift in Sources */,
 				DB724AB2202D671F00125C7F /* SignUpController.swift in Sources */,
 				DBFDA785204864230058FCF5 /* PhotoSelectorCell.swift in Sources */,
+				DB276332204F990400829E08 /* Post.swift in Sources */,
 				DB724AC3202D744F00125C7F /* Extensions.swift in Sources */,
+				DB276334204F9B1200829E08 /* UserProfilePhotoCell.swift in Sources */,
 				DB724ACB20324B7300125C7F /* MainTabBarController.swift in Sources */,
 				DB724AD0203253CC00125C7F /* UserProfileHeader.swift in Sources */,
 				DB724ACD20324C1D00125C7F /* UserProfileController.swift in Sources */,
