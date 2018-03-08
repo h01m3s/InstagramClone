@@ -15,6 +15,8 @@
 		DB27633B204FA7C500829E08 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27633A204FA7C500829E08 /* HomePostCell.swift */; };
 		DB27633D2050E92300829E08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27633C2050E92300829E08 /* User.swift */; };
 		DB697FB02050EEC300207AEE /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB697FAF2050EEC300207AEE /* FirebaseUtil.swift */; };
+		DB697FB32050EF8A00207AEE /* UserSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB697FB22050EF8A00207AEE /* UserSearchController.swift */; };
+		DB697FB52050F5C100207AEE /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB697FB42050F5C100207AEE /* UserSearchCell.swift */; };
 		DB724AB0202D671F00125C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724AAF202D671F00125C7F /* AppDelegate.swift */; };
 		DB724AB2202D671F00125C7F /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724AB1202D671F00125C7F /* SignUpController.swift */; };
 		DB724AB5202D671F00125C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB724AB3202D671F00125C7F /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		DB27633A204FA7C500829E08 /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
 		DB27633C2050E92300829E08 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB697FAF2050EEC300207AEE /* FirebaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
+		DB697FB22050EF8A00207AEE /* UserSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchController.swift; sourceTree = "<group>"; };
+		DB697FB42050F5C100207AEE /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
 		DB724AAC202D671F00125C7F /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB724AAF202D671F00125C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB724AB1202D671F00125C7F /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		DB697FB12050EF7900207AEE /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DB697FB22050EF8A00207AEE /* UserSearchController.swift */,
+				DB697FB42050F5C100207AEE /* UserSearchCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		DB724AA3202D671F00125C7F = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 		DB724AAE202D671F00125C7F /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				DB697FB12050EF7900207AEE /* Search */,
 				DB276337204FA6A600829E08 /* Home */,
 				DB276330204F98F800829E08 /* Models */,
 				DBFDA78120465D520058FCF5 /* AddPhoto */,
@@ -323,12 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB697FB52050F5C100207AEE /* UserSearchCell.swift in Sources */,
 				DBA47F6B204B883E0072A11C /* SharePhotoController.swift in Sources */,
 				DB724AB2202D671F00125C7F /* SignUpController.swift in Sources */,
 				DBFDA785204864230058FCF5 /* PhotoSelectorCell.swift in Sources */,
 				DB276336204FA1F100829E08 /* CustomImageView.swift in Sources */,
 				DB276332204F990400829E08 /* Post.swift in Sources */,
 				DB724AC3202D744F00125C7F /* Extensions.swift in Sources */,
+				DB697FB32050EF8A00207AEE /* UserSearchController.swift in Sources */,
 				DB276334204F9B1200829E08 /* UserProfilePhotoCell.swift in Sources */,
 				DB27633D2050E92300829E08 /* User.swift in Sources */,
 				DB724ACB20324B7300125C7F /* MainTabBarController.swift in Sources */,
