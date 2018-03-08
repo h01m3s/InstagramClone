@@ -19,7 +19,7 @@ class UserProfilePhotoCell: UICollectionViewCell {
     
     let photoImageView: CustomImageView = {
         let imageView = CustomImageView()
-        imageView.backgroundColor = .red
+        imageView.backgroundColor = UIColor.rgb(red: 240, green: 240, blue: 240)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         return imageView

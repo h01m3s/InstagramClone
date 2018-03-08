@@ -20,7 +20,6 @@ class HomePostCell: UICollectionViewCell {
             guard let profileImageUrl = post?.user.profileImageUrl else { return }
             userProfileImageView.loadImage(urlString: profileImageUrl)
             
-//            captionLabel.text = post?.caption
             setupAttributedCaption()
         }
     }
@@ -41,6 +40,7 @@ class HomePostCell: UICollectionViewCell {
         let imageView = CustomImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.backgroundColor = UIColor.rgb(red: 240, green: 240, blue: 240)
         return imageView
     }()
     
@@ -48,6 +48,7 @@ class HomePostCell: UICollectionViewCell {
         let imageView = CustomImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.backgroundColor = UIColor.rgb(red: 240, green: 240, blue: 240)
         return imageView
     }()
     

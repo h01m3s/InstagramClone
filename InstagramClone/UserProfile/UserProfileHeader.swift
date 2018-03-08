@@ -22,6 +22,7 @@ class UserProfileHeader: UICollectionViewCell {
     
     let profileImageView: CustomImageView = {
         let imageView = CustomImageView()
+        imageView.backgroundColor = UIColor.rgb(red: 240, green: 240, blue: 240)
         return imageView
     }()
     
