@@ -28,7 +28,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     fileprivate func fetchPosts() {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let ref = Database.database().reference().child("posts").child(uid)
-        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.queryOrdered(byChild: "creationDate").observeSingleEvent(of: .value, with: { (snapshot) in
             
             guard let dictionaries = snapshot.value as? [String: Any] else { return }
             dictionaries.forEach({ (key, value) in
@@ -51,7 +51,12 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200)
+        
+        var height: CGFloat = 40 + 8 + 8 //username userprofileimageview
+        height += view.frame.width
+        height += 50
+        height += 60
+        return CGSize(width: view.frame.width, height: height)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
