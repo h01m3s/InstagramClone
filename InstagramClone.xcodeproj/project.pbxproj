@@ -13,6 +13,7 @@
 		DB276336204FA1F100829E08 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB276335204FA1F100829E08 /* CustomImageView.swift */; };
 		DB276339204FA6B100829E08 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB276338204FA6B100829E08 /* HomeController.swift */; };
 		DB27633B204FA7C500829E08 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27633A204FA7C500829E08 /* HomePostCell.swift */; };
+		DB27633D2050E92300829E08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27633C2050E92300829E08 /* User.swift */; };
 		DB724AB0202D671F00125C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724AAF202D671F00125C7F /* AppDelegate.swift */; };
 		DB724AB2202D671F00125C7F /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724AB1202D671F00125C7F /* SignUpController.swift */; };
 		DB724AB5202D671F00125C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB724AB3202D671F00125C7F /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		DB276335204FA1F100829E08 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		DB276338204FA6B100829E08 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DB27633A204FA7C500829E08 /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		DB27633C2050E92300829E08 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB724AAC202D671F00125C7F /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB724AAF202D671F00125C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB724AB1202D671F00125C7F /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				DB276331204F990400829E08 /* Post.swift */,
+				DB27633C2050E92300829E08 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				DB276332204F990400829E08 /* Post.swift in Sources */,
 				DB724AC3202D744F00125C7F /* Extensions.swift in Sources */,
 				DB276334204F9B1200829E08 /* UserProfilePhotoCell.swift in Sources */,
+				DB27633D2050E92300829E08 /* User.swift in Sources */,
 				DB724ACB20324B7300125C7F /* MainTabBarController.swift in Sources */,
 				DB724AD0203253CC00125C7F /* UserProfileHeader.swift in Sources */,
 				DB724ACD20324C1D00125C7F /* UserProfileController.swift in Sources */,
