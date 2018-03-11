@@ -17,7 +17,7 @@ extension Database {
             
             let user = User(uid: uid, dictionary: userDictioanry)
             
-            print(user.username)
+//            print(user.username)
             
             completeion(user)
         }) { (err) in
