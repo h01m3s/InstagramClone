@@ -39,13 +39,22 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
         guard let imageData = photo.fileDataRepresentation() else { return }
         
         guard let previewImage = UIImage(data: imageData) else { return }
-        let previewImageView = UIImageView(image: previewImage)
         
+        let containerView = PreviewPhotoContainerView()
+        containerView.previewImageView.image = previewImage
+        view.addSubview(containerView)
+        
+        containerView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        
+        
+        /*
+        let previewImageView = UIImageView(image: previewImage)
         previewImageView.contentMode = .scaleAspectFill
         view.addSubview(previewImageView)
         previewImageView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         
         print("Finish processing photo sample buffer...")
+         */
     }
     
 //    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
@@ -78,6 +87,10 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
         setupCaptureSession()
         
         setupHUD()
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     fileprivate func setupHUD() {
