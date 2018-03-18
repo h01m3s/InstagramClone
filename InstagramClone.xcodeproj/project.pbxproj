@@ -31,6 +31,7 @@
 		DB724AD3203269BC00125C7F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB724AD2203269BC00125C7F /* LoginController.swift */; };
 		DB83A1F5205B83AA0069D06F /* CustomAnimationPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A1F4205B83AA0069D06F /* CustomAnimationPresentor.swift */; };
 		DB83A1F7205B86A00069D06F /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A1F6205B86A00069D06F /* CustomAnimationDismisser.swift */; };
+		DB83A1F9205E13FC0069D06F /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A1F8205E13FC0069D06F /* CommentsController.swift */; };
 		DB9067A72058BD0D00DC193A /* PreviewPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9067A62058BD0D00DC193A /* PreviewPhotoContainerView.swift */; };
 		DBA47F6B204B883E0072A11C /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA47F6A204B883E0072A11C /* SharePhotoController.swift */; };
 		DBFDA78320465D650058FCF5 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDA78220465D650058FCF5 /* PhotoSelectorController.swift */; };
@@ -67,6 +68,7 @@
 		DB724AD2203269BC00125C7F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DB83A1F4205B83AA0069D06F /* CustomAnimationPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationPresentor.swift; sourceTree = "<group>"; };
 		DB83A1F6205B86A00069D06F /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
+		DB83A1F8205E13FC0069D06F /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
 		DB9067A62058BD0D00DC193A /* PreviewPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoContainerView.swift; sourceTree = "<group>"; };
 		DBA47F6A204B883E0072A11C /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
 		DBFDA78220465D650058FCF5 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				DB276338204FA6B100829E08 /* HomeController.swift */,
 				DB27633A204FA7C500829E08 /* HomePostCell.swift */,
+				DB83A1F8205E13FC0069D06F /* CommentsController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				DB724AD3203269BC00125C7F /* LoginController.swift in Sources */,
 				DB27633B204FA7C500829E08 /* HomePostCell.swift in Sources */,
 				DBFDA7872048683F0058FCF5 /* PhotoSelectorHeader.swift in Sources */,
+				DB83A1F9205E13FC0069D06F /* CommentsController.swift in Sources */,
 				DBFDA78320465D650058FCF5 /* PhotoSelectorController.swift in Sources */,
 				DB276339204FA6B100829E08 /* HomeController.swift in Sources */,
 			);
