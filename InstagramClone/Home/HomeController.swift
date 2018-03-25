@@ -86,12 +86,26 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
                 
                 var post = Post(user: user, dictionary: dictionary)
                 post.id = key
-                self.posts.append(post)
+                
+                guard let uid = Auth.auth().currentUser?.uid else { return }
+                
+                Database.database().reference().child("likes").child(key).child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                    
+                    if let value = snapshot.value as? Int, value == 1 {
+                        post.hasLiked = true
+                    } else {
+                        post.hasLiked = false
+                    }
+                    
+                    self.posts.append(post)
+                    self.posts.sort { $0.creationDate.compare($1.creationDate) == .orderedDescending }
+                    self.collectionView?.reloadData()
+                    
+                }, withCancel: { (err) in
+                    print("Failed to fetch like info for post: ", err)
+                })
+                
             })
-            
-            self.posts.sort { $0.creationDate.compare($1.creationDate) == .orderedDescending }
-            
-            self.collectionView?.reloadData()
             
         }) { (err) in
             print("Failed to fetch posts: ", err)
@@ -136,6 +150,28 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let commentsController = CommentsController(collectionViewLayout: UICollectionViewFlowLayout())
         commentsController.post = post
         navigationController?.pushViewController(commentsController, animated: true)
+    }
+    
+    func didLike(for cell: HomePostCell) {
+        guard let indexPath = collectionView?.indexPath(for: cell) else { return }
+        
+        var post = self.posts[indexPath.item]
+        
+        guard let postId = post.id else { return }
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        let values = [uid: post.hasLiked == true ? 0 : 1]
+        Database.database().reference().child("likes").child(postId).updateChildValues(values) { (err, _) in
+            if let err = err {
+                print("Failed to like post: ", err)
+            }
+            
+            post.hasLiked = !post.hasLiked
+            
+            self.posts[indexPath.item] = post
+            
+            self.collectionView?.reloadItems(at: [indexPath])
+        }
     }
     
 }
