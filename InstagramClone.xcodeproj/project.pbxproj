@@ -195,8 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				DB724ACC20324C1D00125C7F /* UserProfileController.swift */,
-				DB276333204F9B1200829E08 /* UserProfilePhotoCell.swift */,
 				DB724ACF203253CC00125C7F /* UserProfileHeader.swift */,
+				DB276333204F9B1200829E08 /* UserProfilePhotoCell.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
