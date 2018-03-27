@@ -48,6 +48,7 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
         textField.borderStyle = .roundedRect
         textField.font = UIFont.systemFont(ofSize: 14)
         textField.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
+        textField.keyboardType = .emailAddress
         return textField
     }()
     
