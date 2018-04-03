@@ -64,10 +64,6 @@ exports.sendPushNotifications = functions.https.onRequest((req, res) => {
                 title: "Push Notification Title",
                 body: "Message Body..."
             },
-          data: {
-            score: '850',
-            time: '2:45'
-          },
           token: user.fcmToken
         };
 
