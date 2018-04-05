@@ -37,6 +37,7 @@
 		DB9067A72058BD0D00DC193A /* PreviewPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9067A62058BD0D00DC193A /* PreviewPhotoContainerView.swift */; };
 		DBA47F6B204B883E0072A11C /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA47F6A204B883E0072A11C /* SharePhotoController.swift */; };
 		DBE9EC7B2075C18D004ECFA5 /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9EC7A2075C18D004ECFA5 /* CommentInputAccessoryView.swift */; };
+		DBE9EC7D2075CBC8004ECFA5 /* CommentInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9EC7C2075CBC8004ECFA5 /* CommentInputTextView.swift */; };
 		DBFDA78320465D650058FCF5 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDA78220465D650058FCF5 /* PhotoSelectorController.swift */; };
 		DBFDA785204864230058FCF5 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDA784204864230058FCF5 /* PhotoSelectorCell.swift */; };
 		DBFDA7872048683F0058FCF5 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDA7862048683F0058FCF5 /* PhotoSelectorHeader.swift */; };
@@ -77,6 +78,7 @@
 		DB9067A62058BD0D00DC193A /* PreviewPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoContainerView.swift; sourceTree = "<group>"; };
 		DBA47F6A204B883E0072A11C /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
 		DBE9EC7A2075C18D004ECFA5 /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
+		DBE9EC7C2075CBC8004ECFA5 /* CommentInputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputTextView.swift; sourceTree = "<group>"; };
 		DBFDA78220465D650058FCF5 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		DBFDA784204864230058FCF5 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		DBFDA7862048683F0058FCF5 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				DB27633A204FA7C500829E08 /* HomePostCell.swift */,
 				DB83A1F8205E13FC0069D06F /* CommentsController.swift */,
 				DBE9EC7A2075C18D004ECFA5 /* CommentInputAccessoryView.swift */,
+				DBE9EC7C2075CBC8004ECFA5 /* CommentInputTextView.swift */,
 				DB0EF58620631C07009D5B04 /* CommentCell.swift */,
 			);
 			path = Home;
@@ -394,6 +397,7 @@
 				DB0EF58720631C07009D5B04 /* CommentCell.swift in Sources */,
 				DB724AD0203253CC00125C7F /* UserProfileHeader.swift in Sources */,
 				DB697FB02050EEC300207AEE /* FirebaseUtil.swift in Sources */,
+				DBE9EC7D2075CBC8004ECFA5 /* CommentInputTextView.swift in Sources */,
 				DB83A1F7205B86A00069D06F /* CustomAnimationDismisser.swift in Sources */,
 				DB724ACD20324C1D00125C7F /* UserProfileController.swift in Sources */,
 				DB724AB0202D671F00125C7F /* AppDelegate.swift in Sources */,
